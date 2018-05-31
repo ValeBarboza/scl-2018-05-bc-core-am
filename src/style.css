@@ -1,37 +1,45 @@
 body {
     background-image: url(../background-pattern-design-87.jpg);
+    
 }
 
 #message-welcome {
 
-    text-align: center;
     font-size: 300%;
     font-weight: 500; 
     margin-top: 3%;
     color: white;
     font-style: italic;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 #code {
 
-    display: inline-block;
-    margin: 5% 15% 2% 13%;
+    position: absolute;
+    top: 200px;
+    left: 200px;
     padding: 2%;
     font-size: 200%;
     font-weight: 500%;
     border: medium dotted #ffffbf;
     color: white;
+    background: rgb(66, 66, 63);
 }
 
 #decoded {
 
-    display: inline-block;
-    margin: 5% 15% 2% 25%;
+    position:absolute;
+    top: 200px;
+    left:900px;
     padding: 2%;
     font-size: 200%;
     font-weight: 500%;
     border: medium dotted #ffffbf;
     color: white;
+    background: rgb(66, 66, 63);
 }
 
 #position-cipher {
