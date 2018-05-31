@@ -1,6 +1,6 @@
 window.cipher = {
 
-  encode: (inputOne, inputTwo) => {
+  encode: (inputTwo, inputOne) => {
     
     let phrase = "";
     for (let i = 0; i < inputTwo.length; i++) {
@@ -8,7 +8,7 @@ window.cipher = {
         
         if((letter.charCodeAt(0) >= 65) && (letter.charCodeAt(0) <=90)) {
           let n = letter.charCodeAt(0) - 65; 
-          phrase += String.fromCharCode(n + inputOne % 26 + 65); 
+          phrase += String.fromCharCode((n + parseInt(inputOne)) % 26 + 65); 
         } 
         else if (letter.charCodeAt(0) === 32) {
           let n = letter.charCodeAt(0);
@@ -19,7 +19,7 @@ window.cipher = {
         return phrase; 
     }, 
 
-  decode: (inputThree, inputFor) => {
+  decode: (inputFor, inputThree) => {
 
     let phraseTwo = "";
     for (let i = 0; i < inputFor.length; i++) {
@@ -27,7 +27,7 @@ window.cipher = {
 
         if((letterTwo.charCodeAt(0) >=65) && (letterTwo.charCodeAt(0) <=90)) {
         let nTwo = letterTwo.charCodeAt(0) + 65;
-        phraseTwo += String.fromCharCode(((nTwo - inputThree) % 26) + 65);
+        phraseTwo += String.fromCharCode((nTwo - parseInt(inputThree)) % 26 + 65);
         }
         else if (letterTwo.charCodeAt(0) === 32) {
         let nTwo = letterTwo.charCodeAt(0);

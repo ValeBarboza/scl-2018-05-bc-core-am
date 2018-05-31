@@ -8,7 +8,7 @@ window.onload = () => {
     buttonOne.addEventListener("click", function() {
         let inputOne = document.getElementById("input-cipher").value;
         let inputTwo = document.getElementById("input-messagecipher").value;
-        let msgFinish = window.cipher.encode(inputOne, inputTwo);
+        let msgFinish = window.cipher.encode(inputTwo, inputOne);
         document.getElementById("cipher").innerHTML = msgFinish; 
      });
     
@@ -20,7 +20,7 @@ window.onload = () => {
     buttonTwo.addEventListener("click", function() {
         let inputThree = document.getElementById("input-decipher").value;
         let inputFor = document.getElementById("input-messagedecipher").value;
-        let msgFinishTwo = window.cipher.decode(inputThree, inputFor);
+        let msgFinishTwo = window.cipher.decode(inputFor, inputThree);
         document.getElementById("decipher").innerHTML = msgFinishTwo;
     });
 
