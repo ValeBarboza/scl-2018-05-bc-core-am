@@ -4,51 +4,50 @@
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="../src/llave.png" />
 </head>
 <body>
 <!-- Título de la pagina -->
   <header>
     <h1 id="message-welcome">Bienvenid@ al Cifrado Cesar</h1> 
   </header>
-<!-- Camino de cifrado y descifrado -->
+
+<!-- Columnas de cifrado y descifrado -->
   <section> 
   <div id="code">Cifrado</div>  
   <div id="decoded">Descifrado</div>
   </section>
 
   <section>
-  <div id="position-cipher">Ingresa la posición que quieres se desplaze el cifrado</div> 
-  <div id="position-decipher">Ingresa la posición que quieres se desplaze el descifrado</div>
+  <div id="position-cipher">Ingresa la posición que quieres se desplaze el cifrado</div>
+  <div id="position-decipher">Ingresa la posición que quieres se desplaze el decifrado</div>
   </section>
-<!-- inputs del número de posiciones que la persona quiere desplazar su codigo para cifrar o descifrar y sus botones -->
+
+<!-- inputs del número de posiciones que la persona quiere desplazar su codigo-->
   <section>
-  <input type="text" id="input-cipher" size="5"> <button id="button-cipher">Ingresar</button>
-  <input type="text" id="input-decipher"size="5"> <button id="button-decipher">Ingresar</button>
+  <input type="text" id="input-cipher" size="5">
+  <input type="text" id="input-decipher" size="5">
   </section>
 
   <section> 
   <div id="text-cipher">Ingresa el mensaje que quieres cifrar</div>
-  <div id="text-decipher">Ingresa el mensaje que quieres descifrar</div>
+  <div id="text-decipher">Ingresa el mensaje que quieres decifrar</div>
   </section>
-<!-- inputs del mensaje que la persona quiere cifrar y descifrar y sus botones -->
+<!-- inputs del mensaje que la persona quiere cifrar y su boton -->
   <section>
-  <input type="text" id="input-messagecipher"> <button id="button-messagecipher">Ingresar</button>
-  <input type="text" id="input-messagedecipher"> <button id="button-messagedecipher">Ingresar</button>
-  </section>
+    <input type="text" id="input-messagecipher"> <button id="button-messagecipher">Cifrar</button>
+    <input type="text" id="input-messagedecipher"> <button id="button-messagedecipher">Decifrar</button>
+  </section> 
 
   <section> 
   <div id="result-cipher">Tu mensaje cifrado es:</div>
   <div id="result-decipher">Tu mensaje decifrado es:</div>
   </section>
-<!-- Aqui se mostrará el mensaje cifrado y descifrado -->
+<!-- Aqui se mostrará el mensaje cifrado -->
   <section> 
   <div id="cipher"></div>
   <div id="decipher"></div>
   </section>
-  
-
-
-
   <div id="root"></div>
 
   <script src="cipher.js"></script>
